@@ -109,13 +109,13 @@ body {
    #i01{
     display: block;
     margin:0 auto;
-    border:2px solid black;
+    border:2px solid indigo;
     border-radius:20px;
   }
 
   footer {
     color: white;
-    background-color: indigo;
+    background-color: black;
     margin: 0;
     padding-top: 40px;
     text-align: left;
