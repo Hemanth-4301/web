@@ -1,0 +1,127 @@
+body {
+    background-image: url('spidy.jpg');
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-color:indigo;
+    text-align: center;
+    padding: 3px;
+    color: white;
+    font-size: 2em;
+  }
+
+  nav {
+    background-color: black;
+    padding: 1px 0;
+    text-align: left;
+    display: flex;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    padding-left: 8px;
+    padding-top: 3px;
+
+  }
+
+  .dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px black;
+    z-index: 1;
+    text-align: left;
+    min-width: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+
+  .dropdown .content a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    right: 3px;
+
+  }
+
+  .dropdown:hover .content {
+    display: block;
+    border-radius: 15px;
+  }
+
+  .dropdown:hover button {
+    background-color: indigo;
+    color: black;
+    margin-top: 1px;
+
+  }
+
+  .dropdown .content a:hover {
+    background-color: indigo;
+    color: white;
+    border-radius: 20px;
+  }
+
+  p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px;
+    color: white;
+  }
+
+  .para {
+    color: black;
+    background-color: black;
+    margin: 10px;
+    padding: 20px;
+    border-width: 2px;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 30px;
+  }
+
+  footer {
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding-top: 40px;
+    text-align: left;
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+
+  h3 {
+    padding-bottom: 60px;
+    color: white;
+    text-align: center;
+  }
+
+  #f1 {
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+
+  }
+  video{
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: -1;
+  }
