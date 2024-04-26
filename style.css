@@ -99,6 +99,19 @@ body {
     border-style: solid;
     border-radius: 30px;
   }
+   .time-table{
+    padding: 20px;
+    text-align:center;
+    text-decoration: none;
+    text-shadow: 2px 5px 27px white;
+    color:white;
+   }
+   #i01{
+    display: block;
+    margin:0 auto;
+    border:2px solid black;
+    border-radius:20px;
+  }
 
   footer {
     color: white;
