@@ -103,7 +103,7 @@ body {
     padding: 20px;
     text-align:center;
     text-decoration: none;
-    text-shadow: 2px 5px 27px white;
+    text-shadow: 2px 5px 27px black;
     color:white;
    }
    #i01{
@@ -115,7 +115,7 @@ body {
 
   footer {
     color: white;
-    background-color: black;
+    background-color: indigo;
     margin: 0;
     padding-top: 40px;
     text-align: left;
