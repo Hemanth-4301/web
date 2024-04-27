@@ -9,7 +9,8 @@
             background-color: white;
             margin: 0;
             padding: 0;
-            color:white
+            color:white;
+            height:2000px;
           }
           h1{
             color:black;
@@ -20,7 +21,7 @@
           }
           nav {
             background-color: indigo;
-            padding:16px;
+            padding:15px;
             text-align: left;
             margin:0;
           }
@@ -42,6 +43,12 @@
             margin-left: auto;
             margin-right: auto;
           }
+          .clip-circle{
+            clip-path: circle(46.1% at 50% 50%);
+          }
+          .t1, .t2{
+            margin-top:30px;
+          }
      </style>  
 </head>
 <body>
@@ -54,11 +61,21 @@
   classmates as they shine brightly on this stage of creativity and expression.</p>
   </div>
   <hr >
-  <div class="t1">
+  <div class="t1" style="text-align: center;">
+    <img class="clip-circle" src="tal1.png" height="100" width="100" alt="img">
     <p style="color: black;text-align: center;">Mahima Hegde<br>(singer)</p>
     <video autoplay muted controls height="300" width="300" style="margin-top: 1px;">
       <source src="vid01.mp4" type="video/mp4">Error!!
     </video>
   </div>
+  <hr>
+
+  <div class="t2" style="text-align: center;" >
+    <img class="clip-circle" src="ganu.jpg" height="100" width="100" alt="img">
+    <p style="color: black;text-align: center;">Ganesha M<br>(artist)</p>
+    <img src="G-art.jpg" height="300" width="300" alt="img">
+  </div>
+  <hr>
+
 </body>
 </html>
