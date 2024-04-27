@@ -1,4 +1,4 @@
- body {
+body {
   background-image: url('https://i.pinimg.com/originals/52/f3/96/52f3965be991f6bda772ec7ea0ef62f6.jpg');
     background-attachment: fixed;
     background-size:100% 100%;
@@ -89,27 +89,18 @@
     color: white;
   }
 
-  .para {
-    color: black;
-    background-color: black;
-    margin: 10px;
-    padding: 20px;
-    border-width: 2px;
-    border-color: orange;
-    border-style: solid;
-    border-radius: 30px;
-  }
+
    .time-table{
     padding: 20px;
     text-align:center;
     text-decoration: none;
-    text-shadow: 2px 5px 27px black;
+    text-shadow: 2px 5px 27px white;
     color:white;
    }
    #i01{
     display: block;
     margin:0 auto;
-    border:2px solid indigo;
+    border:2px solid black;
     border-radius:20px;
   }
 
@@ -135,9 +126,4 @@
     color: white;
 
   }
-  video{
-    position: absolute;
-    right:0;
-    bottom:0;
-    z-index: -1;
-  }
+ 
