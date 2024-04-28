@@ -1,9 +1,24 @@
-body {
-  background-color:white;
+/* body {
+  background-image: url('https://i.pinimg.com/originals/52/f3/96/52f3965be991f6bda772ec7ea0ef62f6.jpg');
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position:center;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-  } 
+  } */
+  body {
+    background: linear-gradient(135deg, hsl(146, 31%, 82%), #f5f1ee, hsl(194, 100%, 69%)); /* Gradient background */
+    color: #333; /* Dark text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+}
+  
 
   header {
     background-color:indigo;
