@@ -1,5 +1,5 @@
-body {
-  background-image:url('https://i.gifer.com/4RNk.gif');
+/* body {
+  background-image: url('https://i.pinimg.com/originals/52/f3/96/52f3965be991f6bda772ec7ea0ef62f6.jpg');
     background-attachment: fixed;
     background-size:100% 100%;
     background-repeat: no-repeat;
@@ -7,7 +7,32 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+  } */
+  body {
+    background: linear-gradient(135deg, #000000, #c0b6b6, #fff); /* Indigo to black to white gradient */
+    color: #fff; /* Light text for better contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite; /* Increased animation duration for slower movement */
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* Added shadow effect for depth */
   }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
 
   header {
     background-color:indigo;
@@ -93,10 +118,9 @@ body {
   footer {
     color: white;
     background-color: black;
-    margin: 0;
+    margin:0;
     padding-top: 40px;
     text-align: left;
-    margin-bottom: 0;
     line-height: 20px;
   }
 
