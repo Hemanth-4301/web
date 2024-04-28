@@ -9,10 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     .campus{
-      background-color: white;
       display:block ;
-      margin-top: 60px;
-      padding: 1px 0 20px 0;
+      margin-top: 80px;
+      padding: 1px 0 10px 0;
       text-align: center;
       border-radius: 25px;
     }
@@ -23,8 +22,7 @@
     }
     
    .time-table{
-    background-color: white;
-    margin: 40px 0 10px 0;
+    margin: 50px 0 10px 0;
     padding: 1px 0 20px 0;
     text-align:center;
     text-decoration: none;
@@ -38,9 +36,10 @@
     border-radius:20px;
   }
   marquee{
-    margin: 30px 0 0 0;
+    margin: 60px 0 0 0;
     color: black;
-    font-size:1.2em;
+    text-shadow:2px 5px 15px rgba(0,0,0,0.5) ;
+    font-size: 2rem;
   }
   </style>
 </head>
@@ -63,13 +62,13 @@
     </div>
   </nav>
   
-  <div class="scrollin-text">
+  <div class="scrolling-text">
     <marquee behaviour="scroll" direction="left"><b>Welcome to CSE-B</b></marquee>
   </div> 
 
   <div style="height: 2000px;">
   <div class="campus">
-    <h2 style="text-shadow:2px 5px 25px indigo;color: black;">Campus</h2>
+    <h2 style="color:black;text-shadow:2px 5px 15px rgba(0,0,0,0.5) ;">Campus</h2>
     <video autoplay muted loop controls height="350" width="250" >
     <source src="campus.mp4" type="video/mp4">
     can't play this video
@@ -78,7 +77,7 @@
 
 
   <div class="time-table">
-    <h2 style="text-shadow: 2px 5px 25px indigo;">Time table</h2>
+    <h2 style="color:black;text-shadow:2px 5px 15px rgba(0,0,0,0.5);">Time table</h2>
     <img id="i01" src="time-table.png" alt="time-table" height="200" width="300">
   </div>
 
