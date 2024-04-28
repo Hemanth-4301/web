@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: white;
-            margin: 0;
-            padding: 0;
-            color:white;
-            height:2500px;
-          }
-          h1{
-            color:black;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            text-shadow: 2px 5px 25px blue;
-
-          }
-          nav {
-            background-color: indigo;
-            padding:15px;
-            text-align: left;
-            margin:0;
-          }
-          a{
-            color: white;
-            text-decoration: none;
-            display: inline;
-          }
-          .body{
-            height:1000px;
-          }
-          .para{
-            color:black;
-            padding: 20px;
-
-          }
-          video{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-          }
-          .clip-circle{
-            clip-path: circle(46.1% at 50% 50%);
-          }
-          .t1, .t2,.t3{
-            margin-top:30px;
-          }
-     </style>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+  <title>CSE-B</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .campus{
+      background-color: white;
+      display:block ;
+      margin-top: 100px;
+      padding: 1px 0 20px 0;
+      text-align: center;
+      border-radius: 25px;
+    }
+    video{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+   .time-table{
+    background-color: white;
+    margin: 60px 0 10px 0;
+    padding: 1px 0 20px 0;
+    text-align:center;
+    text-decoration: none;
+    color:black;
+    border-radius: 25px;
+   }
+   #i01{
+    display: block;
+    margin:0 auto;
+    border:2px solid black;
+    border-radius:20px;
+  }
+  </style>
 </head>
-<body>
-  <nav>
-    <a href='index.html'><h3 style="padding-left: 20px;display:inline;">Home</h3></a>
-  </nav>  
-  <div class="para">
-  <p>Welcome to the <b>Talents Showcase of CSE-B!</b> Here, we celebrate the diverse skills and passions that make our class truly
-  remarkable. From mesmerizing melodies to captivating arts and beyond, explore the myriad talents of our
-  classmates as they shine brightly on this stage of creativity and expression.</p>
-  </div>
-  <hr >
-  <div class="t1" style="text-align: center;">
-    <img class="clip-circle" src="tal1.png" height="100" width="100" alt="img">
-    <p style="color: black;text-align: center;">Mahima Shripad Hegde<br>(singer)</p>
-    <video autoplay muted controls height="300" width="300" style="margin-top: 1px;">
-      <source src="vid01.mp4" type="video/mp4">Error!!
-    </video>
-  </div>
-  <hr>
 
-  <div class="t2" style="text-align: center;" >
-    <img class="clip-circle" src="ganu.jpg" height="100" width="100" alt="img">
-    <p style="color: black;text-align: center;">Ganesha M<br>(artist)</p>
-    <img src="G-art.jpg" height="300" width="300" alt="img">
-  </div>
-  <hr>
+<body>
+  <header><b>CSE-B</b></header>
+  <nav>
+    <div class="dropdown">
+      <button><i class="fas fa-bars"></i></button>
+      <div class="content">
+        <a href="https://parents.nie.ac.in/index.php">Contineo</a>
+        <a href="https://moodlegurukul.nie.ac.in/login/index.php">Moodle</a>
+        <a href="https://hem4301.pythonanywhere.com/">Event Manager</a>
+        <a href="photos.html">Glimpse</a>
+        <a href="talents.html">Talents</a>
+      </div>
+    </div>
+    <div class="image" >
+      <a href='https://en.wikipedia.org/wiki/National_Institute_of_Engineering' ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeDAJf8m6Oc6TPsmFGHV7Q-MkhlR2Guhl3x_yQSVB6DiMUO8FWK8vUHdDC0MjmXtxgEg&usqp=CAU" alt="nie" height="40" width="40"></a>
+    </div>
+  </nav>
 
   
-  <div class="t3" style="text-align: center;" >
-    <img class="clip-circle" src="nidhi.png" height="100" width="100" alt="img">
-    <p style="color: black;text-align: center;">Nidhi Prashant Patil<br>(pianist)</p>
-    <video autoplay muted controls height="300" width="300" style="margin-top: 1px;">
-      <source src="vid02.mp4" type="video/mp4">Error!!
+  <div style="height: 2000px;">
+  <div class="campus">
+    <h2 style="text-shadow:2px 5px 25px indigo;color: black;">Campus</h2>
+    <video autoplay muted loop controls height="350" width="250" >
+    <source src="campus.mp4" type="video/mp4">
+    can't play this video
     </video>
   </div>
-  <hr>
 
+
+  <div class="time-table">
+    <h2 style="text-shadow: 2px 5px 25px indigo;">Time table</h2>
+    <img id="i01" src="time-table.png" alt="time-table" height="200" width="300">
+  </div>
+
+ </div>
+  </div>
+  <footer>
+    <b>
+      <a href="" id="f1">About us</a>
+      <h4 style="padding-left:10px;text-align: left;">
+        Contact us<br><b style="font-size: 1em;">&#9743 :78296 64332</b>
+      </h4>
+      <a href="#" id="f1">Terms of service</a>
+      <h4 style="padding-left:10px;text-align: left;">
+        &copy 2024 cse-b
+      </h4>
+    </b>
+    <h3>
+      Social Media
+      <br>
+      <br>
+      <a href="https://www.instagram.com/cse_b26_grads?igsh=MWYybm45dzBvem90YQ"><i class="fa fa-instagram" style="font-size:40px;color:white;"></i></a>
+    </h3>
+  </footer>
 </body>
 </html>
+
+
