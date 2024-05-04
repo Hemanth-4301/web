@@ -16,7 +16,7 @@
     padding: 0;
     text-align: center;
     background-size: 400% 400%;
-    animation: gradientBG 20s ease infinite;
+    animation: gradientBG 1s ease infinite;
 }
   
 
@@ -31,69 +31,21 @@
 
   nav {
     background-color: black;
-    padding: 1px 0;
-    text-align: left;
+    padding:3px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 .image{
   float:right;
-  margin-right:20px;
-}
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  text-align: right;
+ }
+
+  a{
+    text-decoration:none;
+    color:white;
+    padding-right: 10px;
   }
-
-  .dropdown button {
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 2em;
-    padding-left: 8px;
-    padding-top: 3px;
-
-
-  }
-
-  .dropdown .content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    box-shadow: 0 8px 16px black;
-    z-index: 1;
-    text-align: left;
-    min-width: 150px;
-    border: 1px solid black;
-    border-radius: 15px;
-  }
-
-  .dropdown .content a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    right: 3px;
-
-  }
-
-  .dropdown:hover .content {
-    display: block;
-    border-radius: 15px;
-  }
-
-  .dropdown:hover button {
-    background-color: indigo;
-    color: black;
-    margin-top: 1px;
-
-  }
-
-  .dropdown .content a:hover {
-    background-color: indigo;
-    color: white;
-    border-radius: 20px;
-  }
-
   p {
     font-size: 1.2em;
     text-align: center;
