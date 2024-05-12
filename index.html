@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
   <title>CSE-B</title>
-  <link rel="website icon" type="jpg" href="main.jpg">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,7 +42,28 @@
     border:2px solid indigo;
     border-radius: 25px;
   }
-  </style>
+  button{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    background-color: indigo;
+    color:white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+  }
+  button:hover{
+    background-color: orangered;
+    color:white;
+  }
+  .notes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  a:hover{
+    color:orange;
+  }  </style>
 </head>
 
 <body>
@@ -64,7 +84,7 @@
     <marquee behaviour="scroll" direction="left"><b>Welcome to CSE-B</b></marquee>
   </div> 
 
-  <div style="height: 2000px;">
+  <div style="height: 1300px;">
   <div class="campus">
     <h2 style="color:black;text-shadow:2px 5px 15px rgba(0,0,0,0.5) ;border:2px solid indigo;
     border-radius: 25px; display:inline-block;padding: 3px;">Campus</h2>
@@ -81,7 +101,18 @@
     <img id="i01" src="time-table.png" alt="time-table" height="200" width="300">
   </div>
 
- </div>
+
+  <h2 style="color:black;text-shadow:2px 5px 15px rgba(0,0,0,0.5) ;border:2px solid indigo;
+  border-radius: 25px; display: inline-block;padding: 3px;">Study Materials</h2>
+  <div class="notes">
+    <button onclick="window.open('https://drive.google.com/drive/folders/1-5abotoDrcekQserGlR6wlx85x8qjs8f')">ADA</button>
+    <button onclick="window.open('https://drive.google.com/drive/folders/1-6awosBiMdemM3j4VqwNr9fgQHZLIZ2H')">DBMS</button>
+    <button onclick="window.open('https://drive.google.com/drive/folders/1-EczK8J59c6h50wVcFBtRvYukovKfYi2')">MC</button>
+    <button onclick="window.open('https://drive.google.com/drive/folders/1-GaT95-xBftEZopv4p6RThKbYgoLbSkf')">DMS</button>
+    <button onclick="window.open('https://drive.google.com/drive/folders/1-FZC_-1LfFCfX-isO88PcWG8O-lQEkmR')">BIO</button>
+  </div>
+
+
   </div>
   <footer>
     <b>
