@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(90deg,lightgray,skyblue);
+}
+header{
+    background-color: indigo;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+    font-size: 2rem;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content:right;
+}
+.anchortags{
+   margin-right: auto;
+   padding: 12px;
+}
+.nielogo,#nielogo{
+    margin-right: 10px;
+}
+.navbaranchor{
+    margin:30px;
+    text-decoration:none;
+    font-size: 1.2rem;
+    color: white;
+    display: inline;
+    padding: 5px;
+    transition: background-color 0.2s ease-in;
+}
+
+.navbaranchor:hover{
+    background-color:indigo;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px indigo;
+    border: none;
+
+}
+
+marquee{
+    border: 2px solid indigo;
+    border-radius: 25px;
+    margin: 20px 0;
+    color:black;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 5px 15px black;
+}
+
+.campus1{
+  display:inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px ;
+  border-radius: 10px;
+  box-shadow: 2px 7px 10px black;
+}
+
+#campus{
+    height: 350px;
+    width: 350px;
+}
+
+#campusheading{
+    background-color: indigo;
+    color: white;
+    display:block;
+    padding: 2px;
+}
+
+.timetable01{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius:10px;
+    box-shadow: 2px 7px 10px black;
+
+}
+#timetableheading{
+    display:block;
+    background-color: indigo;
+    color: white;
+    padding: 2px;
+    margin: 30px 0;
+}
+#timetable{
+    height: 200px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+#studymaterials{
+    background-color: indigo;
+    color: white;
+    padding: 2px;
+    display: block;
+    margin: 30px 0 10px 0;
+}
+.notes{
+    display: inline-block;
+    box-shadow: 2px 7px 10px black;
+    margin: 0;
+    padding: 2px 50px 10px 50px;
+    border-radius: 10px;
+
+}
+footer{
+    color: white;
+    background-color: black;
+    margin-top:30px;
+    padding:30px 0 30px 15px;
+    text-align: left;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.mode{
+    background-image: url('mode.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15px;
+    width:15px;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    
+}
+.modeimg{
+    display: inline;
+    justify-content: left;
+    align-items: center;
+    background-color:black;
+
+}
+.mode:hover{
+    background: white;
+}
+
+/* talents.html stylesheet */
+
+.empty{
+    height: 100px;
+}
+.talents-body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg,lightgray,skyblue);
+}
+.home {
+    background-color: indigo;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 6px;
+}
+.homeanchortag {
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+    padding: 2px 6px;
+    transition: background-color 0.3s;
+}
+.homeanchortag:hover{
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 2px 5px 15px black;
+}
+.para{
+    line-height: 3rem;
+    text-align: left;
+    padding: 10px;
+}
+
+.talents{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.talent01,.talent02,.talent03{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 20px ;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 7px 10px black;
+    font-size: 1rem;
+}
+.t1-vid{
+    width: 300px;
+    height: 300px;
+}
+.t3-vid{
+    width: 300px;
+    height: 300px;
+}
+.clip-circle{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.t2-art{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+@media all and (max-width:800px){
+    .talent01,.talent02,.talent03{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 20px ;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 7px 10px black;
+        font-size: 1rem;
+    }
+    .home{
+        font-size: 1.2rem;
+        padding:10px;
+    }
+    .t1-vid{
+        width: 300px;
+        height: 300px;
+    }
+    .t3-vid{
+        width: 300px;
+        height: 300px;
+    }
+    .anchortags{
+        margin-right: auto;
+        padding: 4px;
+     }
+     #campusheading{
+        background-color: indigo;
+        color: white;
+        display:block;
+        padding:2px;
+    }
+    #campus{
+        height: 350px;
+        width: 200px;
+    }
+    .navbaranchor{
+        margin:3px;
+        text-decoration:none;
+        font-size: 1rem;
+        color: white;
+        display: inline;
+        padding: 4px;
+    }
+    .campus1{
+        display:inline-flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px ;
+        border-radius: 10px;
+        box-shadow: 2px 7px 10px black;
+      }
+      .timetable01{
+        padding: 1px;
+      }
+      .home{
+        font-size: 1.2rem;
+        padding: 10px;
+      }
+      .para{
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+}
+
+
