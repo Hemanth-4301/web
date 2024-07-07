@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSE-B</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+  
+      .heading1 {
+        background-color: indigo;
+        font-size: 1.8rem;
+      }
+      .navbag {
+        background-color: black;
+        margin-top: 0; 
+      }
+      .navbar-toggler-icon {
+        border: none;
+        font-size: 1.2rem;
+        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+      .nav-link {
+        transition: all 0.3s ease-out;
+      }
+      .nav-link:hover {
+        background-color: #dc3545;
+        border-radius: 10px;
+        /* box-shadow: 0px 4px 15px rgba(212, 196, 196, 0.3); */
+        color: white;
+        transform: scale(1.02);
+        padding-left: 10px;
+      }
+      
+      marquee {
+        border: 2px solid #dc3545;
+        margin: 15px 0;
+        border-radius: 25px;
+      }
+      .images {
+        overflow: scroll;
+      }
+      .img-thumbnail {
+        border: 0 solid black;
+      }
+    </style>
+  </head>
+  <body class="bg-body-tertiary">
+    <!-- header -->
+    <h1 class="py-1 py-md-3 text-center heading1 text-white mb-0 bg-danger">CSE-B</h1>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbag py-0 ">
+      <div class="container-fluid d-flex justify-content-md-between">
+        <a class="navbar-brand" href="https://en.wikipedia.org/wiki/National_Institute_of_Engineering">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxJvJFVNbx6wcD6_ekK6r_0Ozh2TnYucMBwBQpd47NL13szS3bcDVvIqu-5BY7CofguM&usqp=CAU" alt="Logo" width="35" height="35" class="d-inline align-middle placeholder-wave">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-2 my-2">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item ml-2">
+            <a class="nav-link text-white" href="https://parents.nie.ac.in/index.php">Contineo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="talents.html#glimpse">Glimpse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="talents.html#talents">Talents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="talents.html#aboutus">Aboutus</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- scroll iamges -->
+    <section id="home">
+      <marquee class="fs-4 mt-4 shadow-lg bg-body-tertiary" behaviour="scroll" direction="left">
+        <b>Welcome to CSE-B</b>
+      </marquee>
+      <div class="container d-flex images my-2 col-sm-12 col-md-8 shadow-lg bg-body-tertiary">
+        <img src="p1.jpg" class="img-fluid img-thumbnail" alt="...">
+        <img src="p2.jpg" class="img-fluid img-thumbnail" alt="...">
+        <img src="main.jpg" class="img-fluid img-thumbnail" alt="...">
+        <img src="img2.jpg" class="img-fluid img-thumbnail" alt="...">
+      </div>    
+    </section>
+
+    <!-- time table -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 offset-md-1 ">
+          <div class="card mt-5 mb-3 shadow-lg bg-body-tertiary placeholder-glow ">
+            <div class="card-body ">
+              <h4 class="card-title">Time table</h4>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 months ago</small></p>
+            </div>
+            <hr>
+            <div class="m-3">
+            <img src="time-table.png" class="card-img-top " alt="time_table">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 offset-md-1 mt-1 mt-md-0 ">
+          <div class="card mt-5 mb-5 shadow-lg bg-body-tertiary ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-z12e8SDOmudBUcp1XtkOVbx3Ntxlzyt99g&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <hr>
+              <h5 class="card-title my-3">Study materials</h5>
+              <p class="cart-text">By clicking below button you can download all subjects notes
+              </p>
+              <a href="#" class="btn btn-danger placeholder-wave">Download now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- event Manager -->
+    <section id="events">
+    <div class="container my-4 mb-5 text-center shadow-lg rounded-4 py-3">
+      <h1 class="text-danger">Event Manager</h1>
+      <form id="month-form" class="my-4">
+          <div class="form-group">
+              <label for="month">Select a Month:</label>
+              <select class="form-control d-inline-block w-auto" name="month" id="month">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+              </select>
+              <button type="button" class="btn btn-danger placeholder-wave" onclick="displayEvents()">Submit</button>
+          </div>
+      </form>
+      <div id="event-container">
+      </div>
+    </section>
+  </div>
+  </div>
+
+<!-- footer -->
+<footer class="container-fluid mt-4 fs-4 navbag text-white text-start py-4">
+  <div class="row">
+      <div class="col-12">
+          <a class="text-white" style="text-decoration: none;" href="talents.html#aboutus"><p>About us</p></a>
+      </div>
+      <div class="col-12 mt-0">
+          <p>Contact us</p>
+          <p>&#9743; : 78296 64332</p>
+      </div>
+      <div class="col-12 mt-0">
+          <p>Terms of service</p>
+      </div>
+      <div class="col-12 mt-0">
+          <p>&copy; 2024 cse-b</p>
+      </div>
+  </div>
+  <div class="text-center mt-1">
+      <p>Social Media</p>
+      <a href="https://www.instagram.com/cse_b26_grads?igsh=MWYybm45dzBvem90YQ" class="text-white">
+          <i class="fa fa-instagram fs-1 mt-0 placeholder-wave "></i>
+      </a>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script>
+     function displayEvents() {
+            const events = [
+                { date: 8, month: 1, name: "Harshitha Shankar's Birthday" },
+                { date: 11, month: 1, name: "Jahnavi's Birthday" },
+                { date: 25, month: 1, name: "Manoj ML's Birthday" },
+                { date: 4, month: 2, name: "Ayush's Birthday" },
+                { date: 8, month: 2, name: "Mohith's Birthday" },
+                { date: 9, month: 2, name: "Krishna's Birthday" },
+                { date: 28, month: 2, name: "Kishan Jaiswal's Birthday" },
+                { date: 28, month: 2, name: "Mayuri Patil's Birthday" },
+                { date: 3, month: 3, name: "Keerthan Mada's Birthday" },
+                { date: 7, month: 3, name: "Nidhi Patil's Birthday" },
+                { date: 17, month: 3, name: "Ilaa Ram's Birthday" },
+                { date: 3, month: 3, name: "Akash's Birthday" },
+                { date: 20, month: 3, name: "Impana's Birthday" },
+                { date: 26, month: 3, name: "Hina Shakya's Birthday" },
+                { date: 30, month: 3, name: "Kishan Kumar's Birthday" },
+                { date: 30, month: 3, name: "Hithesh ST's Birthday" },
+                { date: 3, month: 4, name: "Madhusudan's Birthday" },
+                { date: 5, month: 4, name: "Arman's Birthday" },
+                { date: 24, month: 4, name: "Keerthana SR's Birthday" },
+                { date: 19, month: 5, name: "Mallakanna Suresh's Birthday" },
+                { date: 21, month: 5, name: "Kanthashree's Birthday" },
+                { date: 22, month: 5, name: "Kishna Bansal's Birthday" },
+                { date: 23, month: 5, name: "Harshith's Birthday" },
+                { date: 24, month: 5, name: "Kiran's Birthday" },
+                { date: 27, month: 5, name: "Mohan's Birthday" },
+                { date: 4, month: 6, name: "Kaushal's Birthday" },
+                { date: 4, month: 6, name: "Harshitha M's Birthday" },
+                { date: 5, month: 6, name: "Nidhi Bhat's Birthday" },
+                { date: 5, month: 6, name: "Hanumantha Naik's Birthday" },
+                { date: 6, month: 6, name: "Jathin's Birthday" },
+                { date: 13, month: 6, name: "Aprameya's Birthday" },
+                { date: 19, month: 6, name: "Komal's Birthday" },
+                { date: 20, month: 6, name: "Hemang's Birthday" },
+                { date: 22, month: 6, name: "Hema CY's Birthday" },
+                { date: 26, month: 6, name: "Rayyan's Birthday" },
+                { date: 2, month: 7, name: "Mahima's Birthday" },
+                { date: 2, month: 7, name: "Druva's Birthday" },
+                { date: 15, month: 7, name: "Keerthana SM's Birthday" },
+                { date: 16, month: 7, name: "Karthikeya's Birthday" },
+                { date: 18, month: 7, name: "Himavanth's Birthday" },
+                { date: 20, month: 7, name: "Mitha's Birthday" },
+                { date: 26, month: 7, name: "Himanshu's Birthday" },
+                { date: 26, month: 7, name: "Shreya's Birthday" },
+                { date: 5, month: 8, name: "Hemanth's Birthday" },
+                { date: 9, month: 8, name: "Ekanth's Birthday" },
+                { date: 10, month: 8, name: "Jeevitha's Birthday" },
+                { date: 2, month: 9, name: "Manisha's Birthday" },
+                { date: 4, month: 9, name: "Govardhan's Birthday" },
+                { date: 4, month: 9, name: "Gautham's Birthday" },
+                { date: 15, month: 9, name: "Lenora's Birthday" },
+                { date: 17, month: 9, name: "Ganesha's Birthday" },
+                { date: 1, month: 10, name: "Lalith's Birthday" },
+                { date: 2, month: 10, name: "Gaurav's Birthday" },
+                { date: 3, month: 10, name: "Abhishek's Birthday" },
+                { date: 3, month: 10, name: "Mihika's Birthday" },
+                { date: 6, month: 10, name: "Harsha TD's Birthday" },
+                { date: 7, month: 10, name: "Harshith's Birthday" },
+                { date: 7, month: 10, name: "Hithesh Patel's Birthday" },
+                { date: 4, month: 11, name: "Hruthik's Birthday" },
+                { date: 9, month: 11, name: "Lakshay Gupta's Birthday" },
+                { date: 13, month: 11, name: "Krishna Patil's Birthday" },
+                { date: 15, month: 11, name: "Harshith SK's Birthday" },
+                { date: 17, month: 11, name: "Harsh Singh's Birthday" },
+                { date: 28, month: 11, name: "Kush Taunk's Birthday" },
+                { date: 29, month: 11, name: "Kushal Patil's Birthday" },
+                { date: 30, month: 11, name: "Abhinav's Birthday" },
+                { date: 2, month: 12, name: "Pallavi Bai's Birthday" },
+                { date: 4, month: 12, name: "Manoj JS's Birthday" },
+                { date: 4, month: 12, name: "Chitrashree's Birthday" },
+                { date: 15, month: 12, name: "Madan's Birthday" },
+                { date: 17, month: 12, name: "Manishankar's Birthday" }
+            ];
+
+            const month = document.querySelector("#month").value;
+            const eventContainer = document.getElementById("event-container");
+            eventContainer.innerHTML = ""; // Clear previous events
+
+            const table = document.createElement("table");
+            table.className = "table table-striped shadow-lg border border-dark table-bordered mt-4";
+            
+            const thead = document.createElement("thead");
+            const headerRow = document.createElement("tr");
+            const dateHeader = document.createElement("th");
+            dateHeader.innerText = "Date";
+            const nameHeader = document.createElement("th");
+            nameHeader.innerText = "Event Name";
+            headerRow.appendChild(dateHeader);
+            headerRow.appendChild(nameHeader);
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            const tbody = document.createElement("tbody");
+
+            let eventsFound = false;
+            events.forEach((event) => {
+                if (month == event.month) {
+                    const row = document.createElement("tr");
+                    const dateCell = document.createElement("td");
+                    dateCell.innerText = event.date;
+                    const nameCell = document.createElement("td");
+                    nameCell.innerText = event.name;
+                    row.appendChild(dateCell);
+                    row.appendChild(nameCell);
+                    tbody.appendChild(row);
+                    eventsFound = true;
+                }
+            });
+
+            if (!eventsFound) {
+                const row = document.createElement("tr");
+                const cell = document.createElement("td");
+                cell.colSpan = 2;
+                cell.innerText = "No events found";
+                row.appendChild(cell);
+                tbody.appendChild(row);
+            }
+
+            table.appendChild(tbody);
+            eventContainer.appendChild(table);
+        }
+    </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
