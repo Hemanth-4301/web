@@ -39,6 +39,20 @@
             width: 100%;
             height: auto;
         }
+
+            .heart-beat {
+            display: inline-block;
+            animation: beat 0.5s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
     </style>
 </head>
 <body class="bg-body-primary">
@@ -48,7 +62,7 @@
     <nav class="navbar navbar-expand-lg navbag py-0">
         <div class="container-fluid d-flex justify-content-md-between">
             <a class="navbar-brand" href="https://en.wikipedia.org/wiki/National_Institute_of_Engineering">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxJvJFVNbx6wcD6_ekK6r_0Ozh2TnYucMBwBQpd47NL13szS3bcDVvIqu-5BY7CofguM&usqp=CAU" alt="Logo" width="35" height="35" class="d-inline align-middle">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxJvJFVNbx6wcD6_ekK6r_0Ozh2TnYucMBwBQpd47NL13szS3bcDVvIqu-5BY7CofguM&usqp=CAU" alt="Logo" width="35" height="35" class="placeholder-wave d-inline align-middle">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -125,18 +139,19 @@
   </div>
 </section>
 
+<hr>
 <!-- Glimpses -->
 <section id="glimpse">
     <div class="placeholder-wave container text-danger text-center my-4">
         <h2 class="">CSE-B Gallery</h2>
     </div>
 
-    <div class="container-fluid  my-4 para">
+    <div class="container-fluid  my-4 para ">
         <p class="placeholder-wave"><b>Friendship</b> is a special connection built on trust, laughter, and shared moments. True friendship knows no boundaries of distance or time; it provides a reliable network of support and empathy. In life's journey, friendship is the colorful thread that adds richness and meaning to every experience.</p>
     </div>
 
     <div class="container">
-        <img src="img002.jpg" class="img-fluid rounded-3 shadow-lg mb-5" alt="...">
+        <img src="img002.jpg" class="img-fluid rounded-5 shadow-lg mb-5" alt="...">
         <img src="img02.jpg" class="img-fluid rounded-3 shadow-lg mb-5" alt="...">
         <img src="img4.jpg" class="img-fluid rounded-3 shadow-lg mb-5" alt="...">
         <img src="imgg01.jpeg" class="img-fluid rounded-3 shadow-lg mb-5" alt="...">
@@ -145,6 +160,7 @@
 
 </section>
 
+<hr>
 <section id="aboutus">
     <div class="placeholder-wave container text-danger text-center my-4">
         <h2 class="">About us</h2>
@@ -154,7 +170,7 @@
           good times we've had. We want to support our classmates and have a place where we can celebrate what we achieve
           and remember the fun moments. Come check out our site and be part of our journey.</p>
   
-      <h3 class="text-center my-5 ">Made with <b class="placeholder-wave">&#x2764;</b> by  Mysurians
+      <h3 class="text-center my-5 ">Made with <b class="heart-beat placeholder-wave">&#x2764;</b> by  Mysurians
       </h2>
    </div>
 </section>
