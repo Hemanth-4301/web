@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSE-B</title>
-     <link rel="icon" href="B.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-    body{
+  
+     body{
         font-family: Arial, Helvetica, sans-serif;            
         }
   
@@ -49,7 +49,7 @@
       .img-thumbnail {
         border: 0 solid black;
       }
-      
+
      @media (max-width:769px){
       .tt-bg{
         background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWYwZXFsZXgxdTdxZWdjdzg1bWpvd2IyZzF5dTE3M3E5MmFjeTh4bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ITRemFlr5tS39AzQUL/giphy.webp');
@@ -119,7 +119,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5 offset-md-1 ">
-          <div class="card mt-5 mb-3 shadow-lg bg-body-tertiary placeholder-glow ">
+          <div class="card mt-5 mb-3 shadow-lg  placeholder-glow ">
             <div class="card-body ">
               <h4 class="card-title">Time table</h4>
               <p class="card-text"><small class="text-body-secondary">Last updated 3 months ago</small></p>
@@ -147,9 +147,10 @@
       </div>
     </div>
 <hr>
+    
     <!-- event Manager -->
     <section id="events">
-    <div class="container my-4 mb-5 text-center shadow-lg rounded-4 py-3">
+    <div class="container  my-4 mb-5 text-center shadow-lg rounded-4 py-3">
       <h1 class="text-danger">Event Manager</h1>
       <form id="month-form" class="my-4">
           <div class="form-group">
@@ -171,8 +172,12 @@
               <button type="button" class="btn btn-danger placeholder-wave" onclick="displayEvents()">Submit</button>
           </div>
       </form>
+      
+      
       <div id="event-container">
       </div>
+      
+      
     </section>
   </div>
   </div>
@@ -206,8 +211,22 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script>
-     function displayEvents() {
-            const events = [
+
+
+function displayEvents() {
+    // Show loader
+    const loader = document.createElement("div");
+    loader.className = "spinner-border text-dark";
+    loader.setAttribute("role", "status");
+    loader.innerHTML = '<span class="visually-hidden">Loading...</span>';
+    
+    const loaderContainer = document.querySelector("#event-container");
+    loaderContainer.innerHTML = ""; // Clear previous content
+    loaderContainer.appendChild(loader);
+
+    // Simulate loading for 2 seconds
+    setTimeout(() => {
+        const events = [
                 { date: 8, month: 1, name: "Harshitha Shankar's Birthday" },
                 { date: 11, month: 1, name: "Jahnavi's Birthday" },
                 { date: 25, month: 1, name: "Manoj ML's Birthday" },
@@ -281,53 +300,59 @@
                 { date: 17, month: 12, name: "Manishankar's Birthday" }
             ];
 
-            const month = document.querySelector("#month").value;
-            const eventContainer = document.getElementById("event-container");
-            eventContainer.innerHTML = ""; // Clear previous events
 
-            const table = document.createElement("table");
-            table.className = "table table-striped shadow-lg border border-dark table-bordered mt-4";
-            
-            const thead = document.createElement("thead");
-            const headerRow = document.createElement("tr");
-            const dateHeader = document.createElement("th");
-            dateHeader.innerText = "Date";
-            const nameHeader = document.createElement("th");
-            nameHeader.innerText = "Event Name";
-            headerRow.appendChild(dateHeader);
-            headerRow.appendChild(nameHeader);
-            thead.appendChild(headerRow);
-            table.appendChild(thead);
+        const month = document.querySelector("#month").value;
+        const eventContainer = document.getElementById("event-container");
+        eventContainer.innerHTML = ""; // Clear previous events
 
-            const tbody = document.createElement("tbody");
+        const table = document.createElement("table");
+        table.className = "table table-striped shadow-lg border border-dark table-bordered mt-4 ";
+        
+        const thead = document.createElement("thead");
+        const headerRow = document.createElement("tr");
+        const dateHeader = document.createElement("th");
+        dateHeader.innerText = "Date";
+        const nameHeader = document.createElement("th");
+        nameHeader.innerText = "Event Name";
+        headerRow.appendChild(dateHeader);
+        headerRow.appendChild(nameHeader);
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
 
-            let eventsFound = false;
-            events.forEach((event) => {
-                if (month == event.month) {
-                    const row = document.createElement("tr");
-                    const dateCell = document.createElement("td");
-                    dateCell.innerText = event.date;
-                    const nameCell = document.createElement("td");
-                    nameCell.innerText = event.name;
-                    row.appendChild(dateCell);
-                    row.appendChild(nameCell);
-                    tbody.appendChild(row);
-                    eventsFound = true;
-                }
-            });
+        const tbody = document.createElement("tbody");
 
-            if (!eventsFound) {
+        let eventsFound = false;
+        events.forEach((event) => {
+            if (month == event.month) {
                 const row = document.createElement("tr");
-                const cell = document.createElement("td");
-                cell.colSpan = 2;
-                cell.innerText = "No events found";
-                row.appendChild(cell);
+                const dateCell = document.createElement("td");
+                dateCell.innerText = event.date;
+                const nameCell = document.createElement("td");
+                nameCell.innerText = event.name;
+                row.appendChild(dateCell);
+                row.appendChild(nameCell);
                 tbody.appendChild(row);
+                eventsFound = true;
             }
+        });
 
-            table.appendChild(tbody);
-            eventContainer.appendChild(table);
+        if (!eventsFound) {
+            const row = document.createElement("tr");
+            const cell = document.createElement("td");
+            cell.colSpan = 2;
+            cell.innerText = "No events found";
+            row.appendChild(cell);
+            tbody.appendChild(row);
         }
+
+        table.appendChild(tbody);
+        eventContainer.appendChild(table);
+    }, 500); // 2000 milliseconds = 2 seconds
+}
+
+
+
+
     </script>
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
