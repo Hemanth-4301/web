@@ -59,9 +59,28 @@
             background-repeat: no-repeat;
       }
      }
+     
+     @keyframes appear {
+      from{
+        opacity: 0.8;
+        scale: 0.8;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+      
+     }
+     .block{
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 30%;
+     }
+
     </style>
   </head>
   <body class="bg-body-tertiary">
+    
     <!-- header -->
     <h1 class="py-1 py-md-3 text-center heading1 text-white mb-0 bg-danger">CSE-B</h1>
     <!-- nav bar -->
@@ -100,6 +119,7 @@
 
     <!-- scroll iamges -->
     <section id="home">
+      
       <marquee class="fs-4 mt-4 shadow-lg bg-body-tertiary" behaviour="scroll" direction="left">
         <b>Welcome to CSE-B</b>
       </marquee>
@@ -117,9 +137,9 @@
     </section>
 
     <!-- time table -->
-    <div class="container">
+    <div class="container ">
       <div class="row">
-        <div class="col-md-5 offset-md-1 ">
+        <div class="col-md-5 offset-md-1 block ">
           <div class="card mt-5 mb-3 shadow-lg  placeholder-glow ">
             <div class="card-body ">
               <h4 class="card-title">Time table</h4>
@@ -132,7 +152,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 offset-md-1 mt-1 mt-md-0 ">
+        <div class="col-md-4 offset-md-1 mt-1 mt-md-0  block">
           <div class="card mt-5 mb-5 shadow-lg bg-body-tertiary ">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-z12e8SDOmudBUcp1XtkOVbx3Ntxlzyt99g&s" class="card-img-top" alt="...">
             <div class="card-body">
@@ -151,7 +171,7 @@
     
     <!-- event Manager -->
     <section id="events">
-    <div class="container  my-4 mb-5 text-center shadow-lg rounded-4 py-3">
+    <div class="container  my-4 mb-5 text-center shadow-lg rounded-4 py-3 block">
       <h1 class="text-danger">Event Manager</h1>
       <form id="month-form" class="my-4">
           <div class="form-group">
