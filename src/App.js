@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.css";
 import Home from "./components/Home";
@@ -14,14 +14,14 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/talents" element={<Talents />} />
           <Route path="/glimpse" element={<Gallery />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 }
