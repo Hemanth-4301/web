@@ -44,7 +44,11 @@ function ContactForm() {
       <form
         onSubmit={handleSubmit}
         className="contact-form block"
-        style={{ display: "flex", flexDirection: "column" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          animation: "animate 1s ease-in-out",
+        }}
       >
         <h2 style={{ fontFamily: "monospace", letterSpacing: "1px" }}>
           Feedback Form
