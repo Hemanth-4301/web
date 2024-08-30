@@ -1,0 +1,101 @@
+.download-btn {
+  background-color: green;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 18px;
+}
+
+.download-btn:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+@keyframes appear-all {
+  from {
+    opacity: 0.8;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.block {
+  animation: appear-all ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.come-up {
+  transition: all 0.3s ease-in-out;
+}
+
+.come-up:hover {
+  transform: scale3d(1.1, 1, 1);
+}
+.about-heading {
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  animation: appear-2 0.5s 1;
+}
+.about-heading {
+  animation: animate 0.7s ease-in-out 1;
+}
+
+@keyframes animate {
+  from {
+    scale: 0;
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  t0 {
+    scale: 1;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-para {
+  padding: 0 20px;
+  line-height: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  color: whitesmoke;
+  animation: appear-2 0.5s 1;
+  animation: animate 0.7s ease-in-out 1;
+}
+
+.about-bg-outer {
+  background-color: black;
+  background-image: url("../static/images/homebg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes appear-2 {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.heart-beat {
+  display: inline-block;
+  animation: beat 0.5s infinite;
+}
+
+@keyframes beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

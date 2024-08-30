@@ -1,0 +1,65 @@
+.herobg {
+  background-image: url(../static/images/gw-01.gif);
+}
+
+.start-btn-1,
+.start-btn-2 {
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 20px 5px;
+  animation: appear 1.5s ease-in-out 1;
+  text-decoration: none;
+}
+.start-btn-2 {
+  animation: appear 1.5s ease-in-out 1;
+}
+.heading {
+  animation: scale-up 1s ease-in-out 1;
+}
+
+@keyframes appear {
+  from {
+    scale: 0;
+    opacity: 0;
+    transform: translateX(200px);
+    text-shadow: 2px 5px 10px white;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.start-btn-1:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: 0 0 10px green;
+  transition: 0.5s ease-in-out;
+}
+.start-btn-2 {
+  background-color: transparent;
+  border: 1px solid white;
+  transition: 0.5s ease-in-out;
+}
+.start-btn-2:hover {
+  background-color: green;
+  border: none;
+  box-shadow: 0 0 10px green;
+}
+
+@keyframes scale-up {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}

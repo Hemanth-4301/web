@@ -1,0 +1,41 @@
+.contact-form {
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 1.3rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+.form-input {
+  border: none;
+  height: 35px;
+  outline: none;
+  border-radius: 100px;
+  padding-left: 10px;
+}
+.form-input:hover {
+  outline: 2px solid green;
+}
+
+#message {
+  outline: none;
+}
+#message:hover {
+  outline: 2px solid green;
+}
+
+.form-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  margin: 0 auto;
+}
+
+.form-btn:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}

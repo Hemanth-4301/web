@@ -1,0 +1,140 @@
+:root {
+  --color: white;
+  --bg-color: black;
+  /* --h-color: #6f42c1; */
+  --h-color: green;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  background-color: var(--bg-color);
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+#sidebar-active,
+.close-sidebar,
+.open-sidebar {
+  display: none;
+}
+
+nav svg {
+  fill: white;
+}
+nav a {
+  color: var(--color);
+  height: 80%;
+  text-decoration: none;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  color: var(--color);
+  background-color: var(--h-color);
+}
+
+.mode:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 796px) {
+  .logo {
+    margin-right: auto;
+  }
+  .link-container {
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    right: -100%;
+    width: 269px;
+    justify-content: flex-start;
+    z-index: 10;
+    position: fixed;
+    background-color: black;
+    transition: 0.55s ease-in-out;
+  }
+  nav a {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    padding: 17px 30px;
+    border-radius: 0;
+  }
+
+  nav a:hover {
+    animation: appear1 0.2s ease-in-out 1;
+    color: azure;
+    background-color: green;
+  }
+  .mode:hover {
+    background-color: transparent;
+  }
+  .mode {
+    margin-top: 20px;
+  }
+  @keyframes appear1 {
+    from {
+      opacity: 0;
+      scale: 0.97;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  .open-sidebar,
+  .close-sidebar {
+    padding: 20px;
+    display: block;
+  }
+
+  #sidebar-active:checked ~ .link-container {
+    right: 0;
+  }
+}
+.mode,
+.mode:hover,
+.dark-btn {
+  height: 35px;
+  width: 35px;
+  border-radius: 25px;
+  padding: 0 30px;
+  margin-left: 30px;
+  border: 2px solid white;
+  background-color: black;
+  margin-right: 10px;
+}
+.light-btn,
+.light-btn:hover {
+  background-color: green;
+  border: 2px solid white;
+}
+
+a:active,
+a:focus,
+a.active {
+  color: var(--color);
+  background-color: var(--h-color);
+}
