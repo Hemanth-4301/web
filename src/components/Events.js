@@ -1,4 +1,5 @@
 import React from "react";
+
 function Events() {
   function displayEvents() {
     // Show loader

@@ -2,7 +2,7 @@ import React from "react";
 import p1 from "../static/images/p1.jpg";
 import p2 from "../static/images/p2.jpg";
 import p3 from "../static/images/main.jpg";
-import timetable from "../static/images/time-table.png";
+import timetable from "../static/images/time-table.jpg";
 import robot from "../static/images/robot.jpg";
 import { Link } from "react-router-dom";
 import { hover } from "@testing-library/user-event/dist/hover";
@@ -175,7 +175,7 @@ function HomeContent() {
                       }}
                     >
                       {" "}
-                      Last updated 3 months ago
+                      Last updated a few days ago
                     </span>
                   </small>
                 </p>
