@@ -34,9 +34,9 @@ function Gallery() {
           </h1>
         </div>
 
-        <div className="container-fluid my-4 mt-2 para block">
+        <div className="container-fluid my-4 mt-2 para scroll-anime">
           <p
-            className="placeholder-wave block"
+            className="placeholder-wave scroll-anime"
             style={{
               fontSize: "1.2rem",
               fontFamily: "Courier New, Courier,monospace",
@@ -64,37 +64,37 @@ function Gallery() {
         >
           <img
             src={img002}
-            className="img-fluid rounded-4 shadow-lg mb-5 block "
+            className="img-fluid rounded-4 shadow-lg mb-5 scroll-anime "
             alt="..."
             style={{ border: "2px solid white" }}
           />
           <img
             src={img02}
-            className="img-fluid rounded-4 shadow-lg mb-5 block"
+            className="img-fluid rounded-4 shadow-lg mb-5 scroll-anime"
             alt="..."
             style={{ border: "2px solid white" }}
           />
           <img
             src={img2}
-            className="img-fluid rounded-4 shadow-lg mb-5 block"
+            className="img-fluid rounded-4 shadow-lg mb-5 scroll-anime"
             alt="..."
             style={{ border: "2px solid white" }}
           />
           <img
             src={img4}
-            className="img-fluid rounded-4 shadow-lg mb-5 block"
+            className="img-fluid rounded-4 shadow-lg mb-5 scroll-anime"
             alt="..."
             style={{ border: "2px solid white" }}
           />
           <img
             src={imgg01}
-            className="img-fluid rounded-4 shadow-lg mb-5 block"
+            className="img-fluid rounded-4 shadow-lg mb-5 scroll-anime"
             alt="..."
             style={{ border: "2px solid white" }}
           />
           <img
             src={img5}
-            className="img-fluid rounded-4 shadow-lg mb-5 block"
+            className="img-fluid rounded-4 shadow-lg mb-5 scroll-anime"
             alt="..."
             style={{ border: "2px solid white" }}
           />

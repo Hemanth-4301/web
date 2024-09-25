@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { hover } from "@testing-library/user-event/dist/hover";
 import "../styles/Aboutus.css";
 import Events from "./Events";
+import Aos from "aos";
 
 function HomeContent() {
   return (
@@ -110,7 +111,7 @@ function HomeContent() {
         style={{ backgroundColor: "black" }}
       >
         <p
-          className=" px-4 container fs-md-2 "
+          className=" px-4 container fs-md-2 scroll-anime"
           style={{
             fontFamily: "monospace",
             lineHeight: "2rem",
@@ -120,15 +121,16 @@ function HomeContent() {
             fontSize: "1.2rem",
           }}
         >
-          <h1
+          <span
             style={{
               fontFamily: "fanatsy",
               color: "green",
-              letterSpacing: "10px",
+              letterSpacing: "5px",
+              fontSize: "2rem",
             }}
           >
-            Welcome...
-          </h1>
+            Welcome&nbsp;
+          </span>
           to our class website! We're a group of students who enjoy learning and
           growing together. Here, you can find updates, events, and resources to
           help you stay connected. Whether it's study materials or fun
@@ -144,7 +146,7 @@ function HomeContent() {
         }}
       >
         <div class="row">
-          <div class="col-md-5 offset-md-1 p-4 pt-1 pb-1 block  ">
+          <div class="col-md-5 offset-md-1 p-4 pt-1 pb-1 scroll-anime ">
             <div
               class="card mt-5 mb-3 block "
               style={{
@@ -194,7 +196,7 @@ function HomeContent() {
             }}
           >
             <div
-              class="card mt-5 mb-5  bg-body-tertiary block"
+              class="card mt-5 mb-5  bg-body-tertiary scroll-anime"
               style={{
                 border: "2px solid white",
                 borderRadius: "18px",
@@ -212,6 +214,7 @@ function HomeContent() {
               />
               <div
                 class="card-body"
+                data-aos="fade-up"
                 style={{
                   background: "black",
                   borderRadius: "0 0 18px 18px",

@@ -31,7 +31,7 @@ function Talents() {
           </h1>
         </div>
 
-        <div className="container p-3">
+        <div className="container p-3 scroll-anime">
           <p
             style={{
               fontSize: "1.2rem",
@@ -64,7 +64,7 @@ function Talents() {
           }}
         >
           <div className="row">
-            <div className="col-md-4 col-12 d-flex justify-content-center mb-4 block ">
+            <div className="col-md-4 col-12 d-flex justify-content-center mb-4 scroll-anime">
               <div
                 className="card rounded-5 shadow-lg come-up"
                 style={{
@@ -98,7 +98,7 @@ function Talents() {
               </div>
             </div>
 
-            <div className="col-md-4 col-12 d-flex justify-content-center mb-4 block ">
+            <div className="col-md-4 col-12 d-flex justify-content-center mb-4 scroll-anime">
               <div
                 className="card rounded-5 shadow-lg come-up"
                 style={{

@@ -67,8 +67,8 @@ function Navbar() {
           </Link>
           <Link to="https://parents.nie.ac.in/index.php">Contineo</Link>
           <HashLink to="/#events">Events</HashLink>
-          <Link to="/glimpse">Glimpse</Link>
-          <Link to="/talents">Talents</Link>
+          <HashLink to="/glimpse/#glimpse">Glimpse</HashLink>
+          <HashLink to="/talents/#talents">Talents</HashLink>
         </div>
       </nav>
     </div>

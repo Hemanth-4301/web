@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Aboutus.css";
 
 function Events() {
   function displayEvents() {
@@ -147,7 +148,7 @@ function Events() {
         className="px-3 pb-5 py-md-5"
       >
         <div
-          className="container  text-center shadow-lg py-4  pt-5 block"
+          className="container  text-center shadow-lg py-4  pt-5 scroll-anime"
           style={{
             background: "black",
             border: "1px solid white",

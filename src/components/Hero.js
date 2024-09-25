@@ -23,7 +23,8 @@ function Hero() {
             <span
               style={{
                 letterSpacing: "8px",
-                color: "green",
+                color: "white",
+                fontWeight: "600",
               }}
             >
               Welcome to the

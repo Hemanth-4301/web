@@ -1,0 +1,7 @@
+{
+  "liveshare.autoShareServers": true,
+  "liveshare.autoShareTerminals": true,
+  "liveshare.diagnosticLogging": false,
+  "liveshare.showInStatusBar": "always",
+  "workbench.experimental.share.enabled": false
+}
