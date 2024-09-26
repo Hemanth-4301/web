@@ -237,7 +237,7 @@ function HomeContent() {
                   By clicking below button you can download all subjects notes
                 </p>
                 <Link
-                  to="https://drive.google.com/drive/my-drive"
+                  to="https://drive.google.com/drive/folders/1vmWw8FnRNCWx6Mk3uA3UYSkS3Al5f-Js"
                   class="btn  placeholder-wave download-btn"
                 >
                   Download now
