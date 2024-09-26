@@ -8,7 +8,8 @@ import { Link } from "react-router-dom";
 import { hover } from "@testing-library/user-event/dist/hover";
 import "../styles/Aboutus.css";
 import Events from "./Events";
-import Aos from "aos";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css"; // Import animation styles
 
 function HomeContent() {
   return (
@@ -139,6 +140,7 @@ function HomeContent() {
         </p>
       </div>
       {/* time-table */}
+
       <div
         class="container-fluid"
         style={{

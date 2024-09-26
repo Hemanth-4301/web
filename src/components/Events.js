@@ -165,7 +165,7 @@ function Events() {
             Event Manager
           </h1>
           <form id="month-form" className="my-5">
-            <div className="form-group">
+            <div className="form-group d-flex justify-content-center align-items-center ">
               <label
                 for="month"
                 className="text-white me-2 "
