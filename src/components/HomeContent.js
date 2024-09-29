@@ -185,8 +185,276 @@ function HomeContent() {
                 </p>
               </div>
               <hr />
-              <div class="m-3">
-                <img src={timetable} class="card-img-top " alt="time_table" />
+              <div class="m-3" style={{ overflow: "scroll" }}>
+                {/* <img src={timetable} class="card-img-top " alt="time_table" /> */}
+                <h1 style={{ margin: "0 0  20px 0" }}>
+                  5<sup>th</sup> semester
+                </h1>
+                <table
+                  border={1}
+                  style={{
+                    borderCollapse: "collapse",
+                    padding: "5px",
+                    textAlign: "center",
+                    textWrap: "nowrap",
+                  }}
+                >
+                  <tr>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      Days
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      9-10a.m
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      10-11a.m
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      11-11:30a.m
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      11:30-12:30p.m
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      12:30-1:30p.m
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      1:30-2:30p.m
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      2:30-3:30p.m
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      3:30-4:30p.m
+                    </th>
+                  </tr>
+
+                  <tr>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      Mon
+                    </th>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pYsQgJkDgkpPymelGc1cgv2GCWftjhjC?usp=drive_link">
+                        AI
+                      </a>
+                      <br></br>(401)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
+                        CN
+                      </a>
+                      <br></br>(401)
+                    </td>
+                    <td
+                      rowSpan={6}
+                      style={{ border: "1px solid black", padding: "5px" }}
+                    >
+                      <div className="break">
+                        <p className="fs-3">break</p>
+                      </div>
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
+                        FSD
+                      </a>
+                      <br></br> (403)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1peJ81bRuO0dUYd9gti8IKfqkT5ZwqQy_?usp=drive_link">
+                        SPM
+                      </a>{" "}
+                      <br></br>(403)
+                    </td>
+                    <td
+                      rowSpan={6}
+                      style={{ border: "1px solid black", padding: "5px" }}
+                    >
+                      <div className="break">
+                        <p className="fs-3">launch break</p>
+                      </div>
+                    </td>
+                    <td colSpan={2} style={{ padding: "5px" }}>
+                      <b>B2</b>({" "}
+                      <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
+                        CN
+                      </a>
+                      ,CSLAB-8)(SKM+L2)<br></br>
+                      <b>B1</b>(
+                      <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
+                        FSD
+                      </a>
+                      ,ISLAB-4)(PMS+MMA)
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      Tue
+                    </th>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <b>~</b>
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <b>~</b>
+                    </td>
+
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pYsQgJkDgkpPymelGc1cgv2GCWftjhjC?usp=drive_link">
+                        AI
+                      </a>
+                      <br></br>(402)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
+                        ATC
+                      </a>{" "}
+                      <br></br> (402)
+                    </td>
+
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
+                        CN
+                      </a>
+                      <br></br>(308)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
+                        FSD
+                      </a>
+                      <br></br>(308)
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      Wed
+                    </th>
+                    <td
+                      colSpan={2}
+                      style={{ border: "1px solid black", padding: "5px" }}
+                    >
+                      <b>B1</b>({" "}
+                      <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
+                        CN
+                      </a>
+                      ,CSLAB-8)(PN+ZF)<br></br>
+                      <b>B2</b>(
+                      <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
+                        FSD
+                      </a>
+                      ,CSLAB-5)(PMS+Dr)
+                    </td>
+
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1q3lYnBjzHPiI9fSE-3wSynifak35LDI6?usp=drive_link">
+                        RM
+                      </a>
+                      <br></br>(401)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pYsQgJkDgkpPymelGc1cgv2GCWftjhjC?usp=drive_link">
+                        AI
+                      </a>
+                      <br></br>(401)
+                    </td>
+
+                    <td
+                      colSpan={2}
+                      style={{ border: "1px solid black", padding: "5px" }}
+                    >
+                      <b>B3</b>({" "}
+                      <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
+                        CN
+                      </a>
+                      ,CSLAB-8)(Dr.SS+ZF)<br></br>
+                      <b>B2</b>(
+                      <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
+                        FSD
+                      </a>
+                      ,CSLAB-5)(PMS+MMA)
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      Thur
+                    </th>
+                    <td
+                      colSpan={2}
+                      style={{ border: "1px solid black", padding: "5px" }}
+                    >
+                      <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
+                        ATC
+                      </a>
+                      &nbsp;Tutorial<br></br>
+                      <b>B2</b>(CSLAB-6)(Dr.BRV)
+                    </td>
+
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
+                        ATC
+                      </a>
+                      <br></br>(402)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1q3lYnBjzHPiI9fSE-3wSynifak35LDI6?usp=drive_link">
+                        RM
+                      </a>
+                      <br></br>(402)
+                    </td>
+
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
+                        FSD
+                      </a>
+                      <br></br>(402)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1peJ81bRuO0dUYd9gti8IKfqkT5ZwqQy_?usp=drive_link">
+                        SPM
+                      </a>{" "}
+                      <br></br>(402)
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      Fri
+                    </th>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      EVS<br></br>(308)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
+                        CN
+                      </a>
+                      <br></br>(308)
+                    </td>
+
+                    <td
+                      colSpan={2}
+                      style={{ border: "1px solid black", padding: "5px" }}
+                    >
+                      <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
+                        ATC
+                      </a>{" "}
+                      Tutorial<br></br>CSLAB-3(Dr.BRV)
+                    </td>
+
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
+                        ATC
+                      </a>
+                      <br></br>(308)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1peJ81bRuO0dUYd9gti8IKfqkT5ZwqQy_?usp=drive_link">
+                        SPM
+                      </a>
+                      <br></br>(308)
+                    </td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
