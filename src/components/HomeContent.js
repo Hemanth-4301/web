@@ -185,7 +185,7 @@ function HomeContent() {
                 </p>
               </div>
               <hr />
-              <div class="m-3" style={{ overflow: "scroll" }}>
+              <div class="m-3" style={{ overflowX: "scroll" }}>
                 {/* <img src={timetable} class="card-img-top " alt="time_table" /> */}
                 <h1 style={{ margin: "0 0  20px 0" }}>
                   5<sup>th</sup> semester
@@ -227,6 +227,9 @@ function HomeContent() {
                     <th style={{ border: "1px solid black", padding: "5px" }}>
                       3:30-4:30p.m
                     </th>
+                    <th style={{ border: "1px solid black", padding: "5px" }}>
+                      4:30-5:30p.m
+                    </th>
                   </tr>
 
                   <tr>
@@ -257,13 +260,13 @@ function HomeContent() {
                       <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
                         FSD
                       </a>
-                      <br></br> (403)
+                      <br></br> (401)
                     </td>
                     <td style={{ border: "1px solid black", padding: "5px" }}>
                       <a href="https://drive.google.com/drive/folders/1peJ81bRuO0dUYd9gti8IKfqkT5ZwqQy_?usp=drive_link">
                         SPM
                       </a>{" "}
-                      <br></br>(403)
+                      <br></br>(401)
                     </td>
                     <td
                       rowSpan={6}
@@ -278,12 +281,15 @@ function HomeContent() {
                       <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
                         CN
                       </a>
-                      ,CSLAB-8)(SKM+L2)<br></br>
+                      ,CSLAB-8)(SKM+LKM)<br></br>
                       <b>B1</b>(
                       <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
                         FSD
                       </a>
-                      ,ISLAB-4)(PMS+MMA)
+                      ,AILAB-4/ISLAB-4)(PMS+MMA)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      NSS/YOGA/PE
                     </td>
                   </tr>
 
@@ -292,28 +298,8 @@ function HomeContent() {
                       Tue
                     </th>
                     <td style={{ border: "1px solid black", padding: "5px" }}>
-                      <b>~</b>
-                    </td>
-                    <td style={{ border: "1px solid black", padding: "5px" }}>
-                      <b>~</b>
-                    </td>
-
-                    <td style={{ border: "1px solid black", padding: "5px" }}>
                       <a href="https://drive.google.com/drive/folders/1pYsQgJkDgkpPymelGc1cgv2GCWftjhjC?usp=drive_link">
                         AI
-                      </a>
-                      <br></br>(402)
-                    </td>
-                    <td style={{ border: "1px solid black", padding: "5px" }}>
-                      <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
-                        ATC
-                      </a>{" "}
-                      <br></br> (402)
-                    </td>
-
-                    <td style={{ border: "1px solid black", padding: "5px" }}>
-                      <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
-                        CN
                       </a>
                       <br></br>(308)
                     </td>
@@ -322,6 +308,29 @@ function HomeContent() {
                         FSD
                       </a>
                       <br></br>(308)
+                    </td>
+
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
+                        CN
+                      </a>
+                      <br></br>(402)
+                    </td>
+
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
+                        ATC
+                      </a>{" "}
+                      <br></br> (402)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <b>~</b>
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <b>~</b>
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <b>~</b>
                     </td>
                   </tr>
 
@@ -338,11 +347,11 @@ function HomeContent() {
                         CN
                       </a>
                       ,CSLAB-8)(PN+ZF)<br></br>
-                      <b>B2</b>(
+                      <b>B3</b>(
                       <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
                         FSD
                       </a>
-                      ,CSLAB-5)(PMS+Dr)
+                      ,AILAB-4/CSLAB-5)(PMS+DR)
                     </td>
 
                     <td style={{ border: "1px solid black", padding: "5px" }}>
@@ -371,7 +380,10 @@ function HomeContent() {
                       <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
                         FSD
                       </a>
-                      ,CSLAB-5)(PMS+MMA)
+                      ,AILAB-4/CSLAB-5)(PMS+MMA)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      NSS/YOGA/PE
                     </td>
                   </tr>
 
@@ -387,7 +399,7 @@ function HomeContent() {
                         ATC
                       </a>
                       &nbsp;Tutorial<br></br>
-                      <b>B2</b>(CSLAB-6)(Dr.BRV)
+                      <b>B2</b>(AILAB-2/CSLAB-6)(Dr.BRV)
                     </td>
 
                     <td style={{ border: "1px solid black", padding: "5px" }}>
@@ -407,13 +419,16 @@ function HomeContent() {
                       <a href="https://drive.google.com/drive/folders/1pbp0qPXvSFXlq-_EjdMaWe2JHeL-SQC0?usp=drive_link">
                         FSD
                       </a>
-                      <br></br>(402)
+                      <br></br>(401)
                     </td>
                     <td style={{ border: "1px solid black", padding: "5px" }}>
                       <a href="https://drive.google.com/drive/folders/1peJ81bRuO0dUYd9gti8IKfqkT5ZwqQy_?usp=drive_link">
                         SPM
                       </a>{" "}
-                      <br></br>(402)
+                      <br></br>(401)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <b>~</b>
                     </td>
                   </tr>
 
@@ -422,13 +437,13 @@ function HomeContent() {
                       Fri
                     </th>
                     <td style={{ border: "1px solid black", padding: "5px" }}>
-                      EVS<br></br>(308)
+                      EVS<br></br>(402)
                     </td>
                     <td style={{ border: "1px solid black", padding: "5px" }}>
                       <a href="https://drive.google.com/drive/folders/1pnzfqvVlHOLeZkIWMR2ImM9UXlce1wqV?usp=drive_link">
                         CN
                       </a>
-                      <br></br>(308)
+                      <br></br>(402)
                     </td>
 
                     <td
@@ -438,20 +453,24 @@ function HomeContent() {
                       <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
                         ATC
                       </a>{" "}
-                      Tutorial<br></br>CSLAB-3(Dr.BRV)
+                      Tutorial<br></br>
+                      <b>B1</b>(CSLAB-4)(Dr.BRV)
                     </td>
 
                     <td style={{ border: "1px solid black", padding: "5px" }}>
                       <a href="https://drive.google.com/drive/folders/1pqQFAJvYKBgzHmb0PiqUofFysx0a-efR?usp=drive_link">
                         ATC
                       </a>
-                      <br></br>(308)
+                      <br></br>(402)
                     </td>
                     <td style={{ border: "1px solid black", padding: "5px" }}>
                       <a href="https://drive.google.com/drive/folders/1peJ81bRuO0dUYd9gti8IKfqkT5ZwqQy_?usp=drive_link">
                         SPM
                       </a>
-                      <br></br>(308)
+                      <br></br>(402)
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "5px" }}>
+                      <b>~</b>
                     </td>
                   </tr>
                 </table>
