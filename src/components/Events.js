@@ -75,7 +75,7 @@ function Events() {
         { date: 7, month: 10, name: "Harshith's Birthday" },
         { date: 7, month: 10, name: "Hithesh Patel's Birthday" },
         { date: 4, month: 11, name: "Hruthik's Birthday" },
-        { date: 9, month: 11, name: "Lakshay Gupta's Birthday" },
+        { date: 15, month: 11, name: "Lakshay Gupta's Birthday" },
         { date: 13, month: 11, name: "Krishna Patil's Birthday" },
         { date: 15, month: 11, name: "Harshith SK's Birthday" },
         { date: 17, month: 11, name: "Harsh Singh's Birthday" },
