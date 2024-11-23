@@ -3,9 +3,6 @@
 🚀 Description
 The Class Website is a dynamic platform designed to enhance collaboration among students by providing easy access to academic resources, event updates, and a creative space to share talents.
 
-✨ Impact:
-Over 1000+ students in the college have actively used this platform to stay informed and connected.
-
 🔑 Key Features:
 📅 Event Calendar: Stay updated with class and college events.
 📚 Resource Library: Access academic materials effortlessly.
